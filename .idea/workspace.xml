@@ -10,8 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7ede692-a5d3-4b06-ac36-74fec59cae09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b7ede692-a5d3-4b06-ac36-74fec59cae09" name="Default Changelist" comment="Add files">
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +139,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1im9FN82io09aOVbtqeTUWqViT3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -145,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../wamp/www/pdch-2020" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -157,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602501795742</updated>
-      <workItem from="1602501796818" duration="797000" />
+      <workItem from="1602501796818" duration="1884000" />
     </task>
     <task id="LOCAL-00001" summary="Add files">
       <created>1602501824587</created>
@@ -173,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602501830734</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add files">
+      <created>1602502608909</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602502608909</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,9 +206,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="432" y="238" key="Vcs.Push.Dialog.v2" timestamp="1602501993512">
+    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1602503068089">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="238" key="Vcs.Push.Dialog.v2/0.0.1680.1010/-1920.-33.1920.1040@0.0.1680.1010" timestamp="1602501993512" />
+    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010/-1920.-33.1920.1040@0.0.1680.1010" timestamp="1602503068089" />
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2" timestamp="1602502729977">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2/0.0.1680.1010/-1920.-33.1920.1040@0.0.1680.1010" timestamp="1602502729977" />
+    <state x="660" y="239" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1602502640976">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="660" y="239" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1680.1010/-1920.-33.1920.1040@0.0.1680.1010" timestamp="1602502640976" />
   </component>
 </project>
