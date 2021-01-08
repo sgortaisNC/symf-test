@@ -58,13 +58,16 @@ class __TwigTemplate_313cf41255d6658f5f3aaaf7798c5adf2d38a69a9210ee92490ad8cb380
         // line 7
         echo "    </head>
     <body>
+        <header>
+            aze
+        </header>
         ";
-        // line 9
+        // line 12
         $this->displayBlock('body', $context, $blocks);
-        // line 10
+        // line 13
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 11
+        // line 14
         echo "    </body>
 </html>
 ";
@@ -113,7 +116,7 @@ class __TwigTemplate_313cf41255d6658f5f3aaaf7798c5adf2d38a69a9210ee92490ad8cb380
 
     }
 
-    // line 9
+    // line 12
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -131,7 +134,7 @@ class __TwigTemplate_313cf41255d6658f5f3aaaf7798c5adf2d38a69a9210ee92490ad8cb380
 
     }
 
-    // line 10
+    // line 13
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -156,7 +159,7 @@ class __TwigTemplate_313cf41255d6658f5f3aaaf7798c5adf2d38a69a9210ee92490ad8cb380
 
     public function getDebugInfo()
     {
-        return array (  135 => 10,  117 => 9,  99 => 6,  80 => 5,  68 => 11,  65 => 10,  63 => 9,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  138 => 13,  120 => 12,  102 => 6,  83 => 5,  71 => 14,  68 => 13,  66 => 12,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -169,6 +172,9 @@ class __TwigTemplate_313cf41255d6658f5f3aaaf7798c5adf2d38a69a9210ee92490ad8cb380
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+        <header>
+            aze
+        </header>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

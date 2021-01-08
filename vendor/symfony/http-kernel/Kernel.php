@@ -73,15 +73,15 @@ abstract class Kernel implements KernelInterface, RebootableInterface, Terminabl
 
     private static $freshCache = [];
 
-    const VERSION = '5.1.7';
-    const VERSION_ID = 50107;
-    const MAJOR_VERSION = 5;
-    const MINOR_VERSION = 1;
-    const RELEASE_VERSION = 7;
-    const EXTRA_VERSION = '';
+    public const VERSION = '5.1.10';
+    public const VERSION_ID = 50110;
+    public const MAJOR_VERSION = 5;
+    public const MINOR_VERSION = 1;
+    public const RELEASE_VERSION = 10;
+    public const EXTRA_VERSION = '';
 
-    const END_OF_MAINTENANCE = '01/2021';
-    const END_OF_LIFE = '01/2021';
+    public const END_OF_MAINTENANCE = '01/2021';
+    public const END_OF_LIFE = '01/2021';
 
     public function __construct(string $environment, bool $debug)
     {
@@ -245,7 +245,7 @@ abstract class Kernel implements KernelInterface, RebootableInterface, Terminabl
         $bundleName = substr($name, 1);
         $path = '';
         if (false !== strpos($bundleName, '/')) {
-            list($bundleName, $path) = explode('/', $bundleName, 2);
+            [$bundleName, $path] = explode('/', $bundleName, 2);
         }
 
         $bundle = $this->getBundle($bundleName);
@@ -791,6 +791,9 @@ abstract class Kernel implements KernelInterface, RebootableInterface, Terminabl
                 // replace multiple new lines with a single newline
                 $rawChunk .= preg_replace(['/\n{2,}/S'], "\n", $token[1]);
             } elseif (\in_array($token[0], [\T_COMMENT, \T_DOC_COMMENT])) {
+                if (!\in_array($rawChunk[\strlen($rawChunk) - 1], [' ', "\n", "\r", "\t"], true)) {
+                    $rawChunk .= ' ';
+                }
                 $ignoreSpace = true;
             } else {
                 $rawChunk .= $token[1];
@@ -798,6 +801,8 @@ abstract class Kernel implements KernelInterface, RebootableInterface, Terminabl
                 // The PHP-open tag already has a new-line
                 if (\T_OPEN_TAG === $token[0]) {
                     $ignoreSpace = true;
+                } else {
+                    $ignoreSpace = false;
                 }
             }
         }
