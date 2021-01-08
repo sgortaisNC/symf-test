@@ -11,9 +11,17 @@ class TestController extends AbstractController
 {
 
     /**
-     * @Route("/add-classes", name="test")
+     * @Route("/",name="index")
      */
     public function index(): \Symfony\Component\HttpFoundation\Response
+    {
+        return $this->render('test/home.html.twig');
+    }
+
+    /**
+     * @Route("/add-classes", name="test")
+     */
+    public function import_class(): \Symfony\Component\HttpFoundation\Response
     {
         $client = HttpClient::create();
         $response = $client->request('GET', 'https://fr.dofus.dofapi.fr/classes');
